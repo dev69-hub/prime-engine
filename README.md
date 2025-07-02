@@ -12,6 +12,20 @@ A lightweight Python engine for working with prime numbers: checking, generating
 - ✅ Count all primes up to `n`
 - ✅ Sum all primes up to `n`
 - ✅ Interactive CLI menu
+  
+##Performance Logs
+
+📊 Comparing Primality Checking Performance:
+
+Your prime_engine                        | Avg Time: 0.000060 sec
+sympy.isprime                            | Avg Time: 0.000031 sec
+gmpy2.is_prime                           | Avg Time: 0.000003 sec
+
+📊 Comparing Prime Generation up to 100,000:
+
+Your generate_prime_numbers              | Avg Time: 0.054800 sec
+sympy.primerange                         | Avg Time: 0.032135 sec
+primesieve                               | Avg Time: 0.000658 sec
 
 ## 📦 Project Structure
 
@@ -26,18 +40,6 @@ prime_engine/
 ├── LICENSE
 ├── .gitignore
 
-##Performance Logs
 
-📊 Comparing Primality Checking Performance:
-
-Your prime_engine                        | Avg Time: 0.000060 sec
-sympy.isprime                            | Avg Time: 0.000031 sec
-gmpy2.is_prime                           | Avg Time: 0.000003 sec
-
-📊 Comparing Prime Generation up to 100,000:
-
-Your generate_prime_numbers              | Avg Time: 0.054800 sec
-sympy.primerange                         | Avg Time: 0.032135 sec
-primesieve                               | Avg Time: 0.000658 sec
 
 
